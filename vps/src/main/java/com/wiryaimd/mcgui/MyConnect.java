@@ -11,11 +11,11 @@ public class MyConnect{
 
     public static FirebaseApp getintialize()throws IOException{
         
-        FileInputStream serviceAccount = new FileInputStream("/root/mymcgui/wiryaimd_mcgui/mc-connect-79051-firebase-adminsdk-q9rrd-c51c525e9e.json");
+        FileInputStream serviceAccount = new FileInputStream("/root/mymcgui/wiryaimd_mcgui/your-firebase-adminsdk.json");
 
         FirebaseOptions options = new FirebaseOptions.Builder()
             .setCredentials(GoogleCredentials.fromStream(serviceAccount))
-            .setDatabaseUrl("https://mc-connect-79051.firebaseio.com")
+            .setDatabaseUrl("https://your-firebase-database.com")
             .build();
 
         FirebaseApp defaultapp = FirebaseApp.initializeApp(options);
