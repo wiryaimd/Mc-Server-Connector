@@ -1,4 +1,4 @@
-# Mc-Connector
+# Mc-Server-Connector
 android app for allow mcpe player to join mc java version
 
 **How it works:**
