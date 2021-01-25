@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">MC Server Converter</string>
-    <string name="appadmob">ca-app-pub-3755658983029339~4201119871</string>
-    <string name="iklan1">ca-app-pub-3755658983029339/7341933318</string>
+    <string name="appadmob">appid</string>
+    <string name="iklan1">adid</string>
 </resources>
