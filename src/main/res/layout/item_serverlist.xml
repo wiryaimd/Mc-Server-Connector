@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorPrimaryDark3">
+
+    <RelativeLayout
+        android:layout_margin="12dp"
+        android:background="@drawable/custombtn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_serverstat"
+            android:layout_margin="12dp"
+            android:fontFamily="@font/sflight"
+            android:text="Java IP: playancrotnet:25565\nMCPE IP: play.myserv.net (19232)\nStatus: Connected"
+            android:textColor="@color/color1"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="6dp"
+            android:id="@+id/item_copy"
+            android:drawablePadding="4dp"
+            android:textColor="@color/colorPrimary2"
+            android:textSize="18sp"
+            android:textAlignment="textEnd"
+            android:drawableEnd="@drawable/ic_content_copy"
+            android:text="Copy"
+            android:layout_below="@id/item_serverstat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

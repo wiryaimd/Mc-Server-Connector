@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark3">
+
+    <Button
+        android:id="@+id/online_close"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/custombtn4"
+        android:fontFamily="@font/sfbold"
+        android:text="Close Server"
+        android:textColor="@color/colorPrimary2"
+        android:textSize="22sp">
+
+    </Button>
+
+    <TextView
+        android:background="@drawable/custombtn5"
+        android:paddingEnd="6dp"
+        android:paddingStart="6dp"
+        android:id="@+id/online_serverstat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/online_close"
+        android:fontFamily="@font/sfbold"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:drawableEnd="@drawable/ic_content_copy"
+        android:text="Server Online! you can join using\n IP: play.serverconvert.my.to\nPort: 19132"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary4"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <TextView
+        android:background="@drawable/custombtn5"
+        android:padding="8dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:id="@+id/online_desk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="@font/sflight"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary2"
+        android:text="Alert! The Server will be online for 45 minutes, if it exceeds the limit then the Server wil automatically closed"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/online_serverstat">
+
+    </TextView>
+
+</RelativeLayout>

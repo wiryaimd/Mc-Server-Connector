@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:background="@color/colorPrimaryDark3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/help_title"
+                android:layout_marginTop="12dp"
+                android:textAlignment="center"
+                android:fontFamily="@font/sfbold"
+                android:textColor="@color/colorPrimary2"
+                android:textSize="32sp"
+                android:text="How to use"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/help_1"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/help_title"
+                android:fontFamily="@font/sflight"
+                android:text="1. First enter IP and Port java server\n\n2. Click the button named 'Check Server'\n\n3. make sure before clicking 'Check Server' the IP and port entered must be valid\n\n4. If successful, the start button will appear, then click the start button"
+                android:textColor="@color/colorPrimary2"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/help_img1"
+                android:layout_below="@id/help_1"
+                android:layout_width="match_parent"
+                android:src="@drawable/help1"
+                android:layout_height="240dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/help_2"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/help_img1"
+                android:fontFamily="@font/sflight"
+                android:text="\n5. If done, remember the ip and port given or you can copy it"
+                android:textColor="@color/colorPrimary2"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/help_img2"
+                android:layout_below="@id/help_2"
+                android:layout_width="match_parent"
+                android:src="@drawable/help2"
+                android:layout_height="240dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/help_3"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/help_img2"
+                android:fontFamily="@font/sflight"
+                android:text="\n6. after that open your mcpe then enter the ip and port that has been given by the apk"
+                android:textColor="@color/colorPrimary2"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/help_img3"
+                android:layout_below="@id/help_3"
+                android:layout_width="match_parent"
+                android:src="@drawable/help3"
+                android:layout_height="240dp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/help_4"
+                android:layout_margin="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/help_img3"
+                android:fontFamily="@font/sflight"
+                android:text="\n7. if done, click save then join the server, Good Luck!"
+                android:textColor="@color/colorPrimary2"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/help_img4"
+                android:layout_below="@id/help_4"
+                android:layout_width="match_parent"
+                android:src="@drawable/help4"
+                android:layout_height="240dp">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

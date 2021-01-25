@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark3"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark4"
+        app:title="MC Converter"
+        app:titleTextColor="@color/colorPrimary4">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/main_help"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_help">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/main_announce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_help"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text=""
+        android:fontFamily="@font/sfbold"
+        android:textColor="@color/color1"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_announce"
+        android:layout_marginBottom="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/main_ip"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/custombtn1"
+                android:fontFamily="@font/sflight"
+                android:hint="IP/ Address... (Exam: play.serverip.net)"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text=""
+                android:textColor="@color/colorPrimary2"
+                android:textColorHint="@color/colorPrimary3"
+                android:textSize="20sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/main_port"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/main_ip"
+                android:layout_margin="8dp"
+                android:background="@drawable/custombtn1"
+                android:fontFamily="@font/sflight"
+                android:hint="Port.. (Default: 25565)"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text=""
+                android:textColor="@color/colorPrimary2"
+                android:textColorHint="@color/colorPrimary3"
+                android:textSize="20sp">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/main_btncheck"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/main_ip"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toEndOf="@id/main_port"
+                android:background="@drawable/custombtn2"
+                android:fontFamily="@font/sflight"
+                android:text="Check Server"
+                android:textColor="@color/colorPrimary2"
+                android:textSize="14sp">
+
+            </Button>
+
+            <FrameLayout
+                android:id="@+id/main_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_port">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/main_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_frame"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="List Server Converted"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary2"
+                android:textSize="24sp">
+
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_list">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/main_adview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3755658983029339/7341933318">
+
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
